@@ -1,0 +1,19 @@
+.message-enter{
+    opacity: 0; /* rend l'animation invisible*/
+    transform: translateY(100%); /* décale de 100% vers le bas le message*/
+    transition: all 2000ms; /*correspond a toutes les transition dans app.js qui aussi de 200ms */
+}
+.message-enter-active{
+    opacity: 1; /* rend l'animationvisible*/
+    transform: translateY(0); /* décale de 0 vers le haut le message*/
+}
+
+.message-leave{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 2000ms;
+}
+.message-leave-active{
+    opacity: 0;
+    transform: translateY(-100%)
+}
